@@ -51,25 +51,53 @@
 
 
 .filterbutton {
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
-  background-color: #EEEEEE;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #eee #555 #555 #eee;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
 }
 .filterbutton.selected {
-  background-color: #bbb;
-  border-color: #555 #eee #eee #555;
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
 }
 .filterbutton:active {
-  background-color: #bbb;
-  border-color: #555 #eee #eee #555;
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
 }
 .filterbutton:hover{
   border-color: black;
 }
+
+
+.btn.btn-default.selected {
+  color: #333;
+  background-color: #c5d0e4;
+  border-color: #adadad;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
 
 .cardpreview {
   width: 90%;
@@ -177,6 +205,21 @@ table.cardlist {
   width:100%;
 }
 
+.cardrow {
+  border-bottom-color: rgb(128, 128, 128);
+  border-collapse: collapse;
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
+  border-top-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: table-row;
+  font-family: Lora, serif;
+  font-size: 16px;
+  height: 34px;
+  line-height: 22.8571434020996px;
+  vertical-align: middle;
+}
 
 .cardrow:nth-child(even) {
   background-color: #EEEEEE;

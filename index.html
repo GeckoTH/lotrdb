@@ -2,21 +2,61 @@
 <html lang="en" ng-app="deckbuilder">
   <head>
     <title>The Rivendell Councilroom</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <link href="style.css" rel="stylesheet" media="screen" />
+    <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" /> -->
+    
     <script src="jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
     <script src="angular.min.js"></script>
     <script src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
     <script src="ngStorage.min.js"></script>
     <script src="lotrdb.js"></script>
     <script src="lz-string.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<link href="style.css" rel="stylesheet" media="screen" />
+	
     <meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=2, user-scalable=yes">
     <link rel="shortcut icon" href="img/favicon.png"> 
     <link rel="apple-itouch-icon" href="img/favicon.png"> 
   </head>
   <body>
-    <header></header>
+  	<div class="navbar-inverse" role="banner">
+  		<div class="container">
+		    <nav role="navigation">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">The Rivendell Councilroom</a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Cards <span class="sr-only">(current)</span></a></li>
+			        <li><a href="#">Packs</a></li>
+			        <li><a href="#">Decks</a></li>
+			        <li><a href="#">Stats</a></li>
+			        <li><a href="#">Help</a></li>
+			        <li><a href="#">Updates</a></li>
+			      </ul>
+			      
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+	</div>
+  	<header></header>
+    <!-- BODY -->
     <div class="body">
       <deck></deck>
     
@@ -50,5 +90,7 @@
       </div>
 
   <!--  <myfooter></myfooter> -->
+  <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
 </html>
