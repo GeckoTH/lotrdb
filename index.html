@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
 	<link href="style.css" rel="stylesheet" media="screen" />
-	
+
     <meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=2, user-scalable=yes">
     <link rel="shortcut icon" href="img/favicon.png"> 
     <link rel="apple-itouch-icon" href="img/favicon.png"> 
@@ -58,36 +58,40 @@
   	<header></header>
     <!-- BODY -->
     <div class="body">
-      <deck></deck>
-    
-      <cardpreview></cardpreview>
-      
-        <div ng-controller="tabController as tab" class="rightdiv">
-          <section class="tab">
-            <ul class="nav nav-pills">
-              <li>
-                <a href ng-click="tab.setTab(1)" ng-class="{activetab: tab.isSet(1)}">Cards</a></li>
-              <li>
-                <a href ng-click="tab.setTab(2)" ng-class="{activetab: tab.isSet(2)}">Packs</a></li>
-              <li>
-                <a href ng-click="tab.setTab(3)" ng-class="{activetab: tab.isSet(3)}">Decks</a></li>
-              <li>
-                <a href ng-click="tab.setTab(4)" ng-class="{activetab: tab.isSet(4)}">Stats</a></li>
-              <li>
-                <a href ng-click="tab.setTab(5)" ng-class="{activetab: tab.isSet(5)}">Help</a></li>
-              <li>
-                <a href ng-click="tab.setTab(6)" ng-class="{activetab: tab.isSet(6)}">Updates</a></li>
-            </ul>
-          </section>
-          <packs></packs>
-          <cards></cards>
-          <mydecks></mydecks>
-          <stats></stats>
-          <about></about>
-          <news></news>
-        </div>
-        
-      </div>
+    	<div class="container-fluid">
+		    <div class="row">
+
+			    <deck></deck>
+			    
+			    <cardpreview></cardpreview>
+		      
+				<div ng-controller="tabController as tab" class="col-xs-5">
+				  <section class="tab">
+				    <ul class="nav nav-pills">
+				      <li>
+				        <a href ng-click="tab.setTab(1)" ng-class="{activetab: tab.isSet(1)}">Cards</a></li>
+				      <li>
+				        <a href ng-click="tab.setTab(2)" ng-class="{activetab: tab.isSet(2)}">Packs</a></li>
+				      <li>
+				        <a href ng-click="tab.setTab(3)" ng-class="{activetab: tab.isSet(3)}">Decks</a></li>
+				      <li>
+				        <a href ng-click="tab.setTab(4)" ng-class="{activetab: tab.isSet(4)}">Stats</a></li>
+				      <li>
+				        <a href ng-click="tab.setTab(5)" ng-class="{activetab: tab.isSet(5)}">Help</a></li>
+				      <li>
+				        <a href ng-click="tab.setTab(6)" ng-class="{activetab: tab.isSet(6)}">Updates</a></li>
+				    </ul>
+				  </section>
+				  <cards></cards>
+				  <packs></packs>
+				  <mydecks></mydecks>
+				  <stats></stats>
+				  <about></about>
+				  <news></news>
+				</div>
+			</div>
+		</div>
+	</div>
 
   <!--  <myfooter></myfooter> -->
   <!-- Latest compiled and minified JavaScript -->

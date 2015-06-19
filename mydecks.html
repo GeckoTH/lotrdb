@@ -17,13 +17,11 @@
         <input name="deckname" placeholder="Deck name" ng-model="mydecks.currentdeck.deckname" style="width:95%;">
       </td>
       <td class="decks">
-        <button class="savebutton"  ng-click="mydecks.saveDeck(mydecks.currentdeck.deckname)">Save</button>
-      </td>
-      <td class="decks">
-        <label class="savebutton"><div class="upload">Upload</div><input name="upload" type="file" style="display:none;" onchange="angular.element(this).scope().mydecks.uploadDeck(event)" accept=".txt,.o8d"></label>
-      </td>
-      <td class="decks">
-        <button class="savebutton"  ng-click="mydecks.clearDeck()" style="min-width:100px;">Clear Deck</button>
+        <div class="btn-group" role="group">
+          <button class="btn btn-default"  ng-click="mydecks.saveDeck(mydecks.currentdeck.deckname)">Save</button>
+          <label class="btn btn-default"><div class="upload">Upload</div><input name="upload" type="file" style="display:none;" onchange="angular.element(this).scope().mydecks.uploadDeck(event)" accept=".txt,.o8d"></label>
+          <button class="btn btn-default"  ng-click="mydecks.clearDeck()" style="min-width:100px;">Clear Deck</button>
+        </div>
       </td>
     </tr>
     <tr ng-show="mydecks.numberOfDecks()">
@@ -35,16 +33,12 @@
         <div style="font-size:9px;padding-left:10px;">{{deck.dateUTC|date:'medium'}}</div>
       </td>
       <td class="decks">
-        <button class="savebutton"  ng-click="mydecks.loadDeck(deck.deckname)">Load</button>
-      </td>
-      <td class="decks">
-        <button class="savebutton"  ng-click="mydecks.downloadDeck(deck.deckname)">Export</button>
-      </td>
-      <td class="decks">
-        <button class="savebutton"  ng-click="mydecks.octgn(deck.deckname)">OCTGN</button>
-      </td>
-      <td class="decks">
-        <button class="savebutton"  ng-click="mydecks.deleteDeck(deck.deckname)">Delete Deck</button>
+        <div class="btn-group" role="group">
+          <button class="btn btn-default"  ng-click="mydecks.loadDeck(deck.deckname)">Load</button>
+          <button class="btn btn-default"  ng-click="mydecks.downloadDeck(deck.deckname)">Export</button>
+          <button class="btn btn-default"  ng-click="mydecks.octgn(deck.deckname)">OCTGN</button>
+          <button class="btn btn-default"  ng-click="mydecks.deleteDeck(deck.deckname)">Delete Deck</button>
+        </div>
       </td>
     </tr>
   </table>
